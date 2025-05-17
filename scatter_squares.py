@@ -20,3 +20,7 @@ ax.axis([0, 1100, 0, 1_100_000])
 ax.ticklabel_format(style="plain")
 
 plt.show()
+
+# To save the plot as an image. We can use a Path object
+# intead of a str
+# plt.savefig("squares_plot.png", bbox_inches="tight")
