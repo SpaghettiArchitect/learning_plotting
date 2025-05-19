@@ -7,7 +7,7 @@ def main() -> None:
     # Keep making new walks, as long as the program is active
     while True:
         # Make a random walk
-        rw = RandomWalk()
+        rw = RandomWalk(50_000)
         rw.fill_walk()
 
         # Plot the points in the walk
@@ -20,7 +20,7 @@ def main() -> None:
             c=point_numbers,
             cmap=plt.cm.Blues,
             edgecolors="none",
-            s=15,
+            s=1,
         )
         ax.set_aspect("equal")
 
