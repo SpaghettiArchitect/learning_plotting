@@ -32,6 +32,9 @@ def main() -> None:
 
     fig.show()
 
+    # To save the visualization instead of showing it
+    # fig.write_html("dice_visual_d6d10.html")
+
 
 if __name__ == "__main__":
     main()
