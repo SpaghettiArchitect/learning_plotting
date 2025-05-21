@@ -1,18 +1,24 @@
 import matplotlib.pyplot as plt
 
-input_values = [1, 2, 3, 4, 5]
-squares = [1, 4, 9, 16, 25]
 
-plt.style.use("seaborn-v0_8")
-fig, ax = plt.subplots()
-ax.plot(input_values, squares, linewidth=3)
+def main() -> None:
+    input_values = [1, 2, 3, 4, 5]
+    squares = [1, 4, 9, 16, 25]
 
-# Set chart title and label axes
-ax.set_title("Square Numbers", fontsize=24)
-ax.set_xlabel("Value", fontsize=14)
-ax.set_ylabel("Square of a Value", fontsize=14)
+    plt.style.use("seaborn-v0_8")
+    fig, ax = plt.subplots()
+    ax.plot(input_values, squares, linewidth=3)
 
-# Set size of tick labels
-ax.tick_params(labelsize=14)
+    # Set chart title and label axes
+    ax.set_title("Square Numbers", fontsize=24)
+    ax.set_xlabel("Value", fontsize=14)
+    ax.set_ylabel("Square of a Value", fontsize=14)
 
-plt.show()
+    # Set size of tick labels
+    ax.tick_params(labelsize=14)
+
+    plt.show()
+
+
+if __name__ == "__main__":
+    main()
